@@ -21,19 +21,19 @@ function controller(saved) {
   vm.runInContext(fs.readFileSync('project-view.js','utf8'), context);
   return {document, window, listeners, storage, context, container};
 }
-test('fresh home defaults to list; early click survives renderer initialization', () => {
+test('fresh home defaults to grid; early list click survives renderer initialization', () => {
   const c=controller();
-  assert.equal(c.window.PortfolioHome.state.view,'list');
-  c.listeners.click({target:{closest:s=>s==='.view-button'?{dataset:{view:'grid'}}:null}});
+  assert.equal(c.window.PortfolioHome.state.view,'grid');
+  c.listeners.click({target:{closest:s=>s==='.view-button'?{dataset:{view:'list'}}:null}});
   c.window.PortfolioHome.sync();
-  assert.equal(c.document.body.dataset.view,'grid');
+  assert.equal(c.document.body.dataset.view,'list');
   vm.runInContext(source, c.context);
-  assert.ok(c.container.innerHTML.includes('videos/safet/grid-cover.mp4'));
-  assert.ok(!c.container.innerHTML.includes('videos/safet/cover.mp4'));
+  assert.ok(c.container.innerHTML.includes('videos/safet/cover.mp4'));
+  assert.ok(!c.container.innerHTML.includes('videos/safet/grid-cover.mp4'));
 });
 test('return restores view, category and scroll target', () => {
-  const c=controller({view:'grid',category:'Identity',scrollY:417});
-  assert.equal(c.window.PortfolioHome.state.view,'grid');
+  const c=controller({view:'list',category:'Identity',scrollY:417});
+  assert.equal(c.window.PortfolioHome.state.view,'list');
   assert.equal(c.window.PortfolioHome.state.category,'Identity');
   assert.equal(c.window.PortfolioHome.state.scrollY,417);
 });

@@ -6,8 +6,9 @@
 .home-page .logo { position: static; font-size: 52px; line-height: 1.265; }
 .home-page .top-nav { position: static; display: block; font-size: 20px; }
 .home-page .email-contact { position: absolute; top: 74px; left: 0; }
-.home-page .copy-email { left: 60px; top: 4px; }
-.home-page .email-address { top: 28px; }
+.home-page .copy-email { left: 60px; top: 28px; }
+.home-page .email-address { top: -1px; }
+.home-page .email-link { top: 23px; }
 .home-page .information-links a { position: fixed; line-height: 1.48; }
 .home-page [data-nav="resume"] { left: calc(100vw / 12 + 53px); top: 202px; }
 .home-page [data-nav="about"] { left: calc(100vw / 6 + 47px); top: 271px; }

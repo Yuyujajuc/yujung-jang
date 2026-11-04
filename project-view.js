@@ -1,5 +1,7 @@
 // Install before styles/media load so even an early view click is retained.
 (() => {
+  // Fresh-visit view: 'grid' or 'list'. Keep index.html's initial view in sync.
+  const defaultView = 'grid';
   const key = 'portfolio:return';
   const categories = ['all', 'Motion + Web', 'Editorial', 'Identity', 'Infographics', 'other'];
   let saved;
@@ -9,7 +11,7 @@
   } catch { /* Browsing still works when storage is unavailable. */ }
   const requestedCategory = new URLSearchParams(location.search).get('category');
   const state = {
-    view: saved?.view === 'grid' ? 'grid' : 'list',
+    view: ['grid', 'list'].includes(saved?.view) ? saved.view : defaultView,
     category: categories.includes(requestedCategory) ? requestedCategory :
       categories.includes(saved?.category) ? saved.category : 'all',
     scrollY: !requestedCategory && Number.isFinite(saved?.scrollY) ? Math.max(0, saved.scrollY) : 0

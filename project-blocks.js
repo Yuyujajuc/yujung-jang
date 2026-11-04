@@ -36,7 +36,7 @@
       stage.append(el('span', '', data.placeholder || 'Media to be assigned'));
     } else if (data.type === 'video') {
       const video = el('video');
-      video.preload = 'none';
+      video.preload = ['auto', 'metadata'].includes(data.preload) ? data.preload : 'none';
       video.loop = Boolean(data.loop);
       video.muted = data.muted ?? Boolean(data.autoplay);
       video.defaultMuted = video.muted;
@@ -45,7 +45,8 @@
       if (data.poster) video.poster = data.poster;
       video.setAttribute('aria-label', data.alt || 'Project video');
       video.dataset.src = data.src;
-      if (data.autoplay) video.dataset.autoplay = 'true';
+      if (data.autoplayOnView) video.dataset.autoplayOnView = 'true';
+      else if (data.autoplay) video.dataset.autoplay = 'true';
       if (data.width && data.height) { video.width = data.width; video.height = data.height; }
       stage.append(video);
     } else {
@@ -184,10 +185,34 @@
         video.play().catch(() => { video.controls = true; });
       } else if (video.dataset.autoplay) video.controls = true;
     };
+    // Explicit preloading starts on page entry, independently of playback visibility.
+    root.querySelectorAll('video[data-src][preload="auto"], video[data-src][preload="metadata"]').forEach(load);
     if (!('IntersectionObserver' in window)) {
       root.querySelectorAll('video[data-src]').forEach(load);
+      root.querySelectorAll('video[data-autoplay-on-view]').forEach(video => { video.controls = true; });
       return;
     }
+    // Attempt once, only after the video enters the viewport. Never restart a
+    // video the visitor has paused or sought through using its native controls.
+    const visiblePlayback = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || entry.intersectionRatio < 0.25) return;
+        const video = entry.target;
+        visiblePlayback.unobserve(video);
+        load(video);
+        video.controls = true;
+        if (!video.paused || video.currentTime > 0 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        video.play().catch(() => { /* Sound autoplay may be blocked; native Play remains available. */ });
+      });
+    }, { threshold: 0.25 });
+    root.querySelectorAll('video[data-autoplay-on-view]').forEach(video => {
+      video.controls = true;
+      // Manual interaction takes precedence, even before the visibility trigger.
+      video.addEventListener('play', () => visiblePlayback.unobserve(video), { once: true });
+      video.addEventListener('pointerdown', () => visiblePlayback.unobserve(video), { once: true });
+      video.addEventListener('keydown', () => visiblePlayback.unobserve(video), { once: true });
+      visiblePlayback.observe(video);
+    });
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) { load(entry.target); observer.unobserve(entry.target); }

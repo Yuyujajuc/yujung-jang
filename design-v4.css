@@ -1,6 +1,6 @@
 /* Main 4: list 424:32 and grid 498:382. Shared/About styling stays in v3. */
 .portfolio-home .site { padding-top: 106px; }
-.portfolio-home .project-image { aspect-ratio: 13 / 8; }
+.portfolio-home .project-image { aspect-ratio: 13 / 8; background: transparent; }
 .portfolio-home .view-switch {
   position: fixed;
   z-index: 1;
@@ -18,6 +18,15 @@
 .portfolio-home .project-info { min-height: 224.354px; padding: 127.558px 114px 28px; background-image: url('images/interface/main4-list-gradient.svg?v=2'); }
 .portfolio-home .project-meta { gap: 31.417px; margin-top: 7.58px; }
 .portfolio-home .project-meta p:first-child { min-width: 81.583px; }
+/* 3.2 Main (list): title starts 63px above the image's bottom edge. */
+@media (min-width: 1101px) and (hover: hover) {
+  .portfolio-home[data-view="list"] .project-info {
+    bottom: -5.3px;
+    min-height: 0;
+    padding: 76px 114px 0;
+    background-size: cover;
+  }
+}
 .portfolio-home[data-view="grid"] .projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 24.5px; row-gap: 66px; }
 .portfolio-home[data-view="grid"] .project { grid-column: auto; }
 .portfolio-home[data-view="grid"] .project-image { aspect-ratio: 1; position: relative; container-type: size; }
