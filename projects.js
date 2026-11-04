@@ -156,10 +156,10 @@ const projects = [
 
     cover: { type: "image", src: "images/risd-sign-system/cover.jpg" },
 
-    measurements: `13" x 9", 9 pages, accordion book, 2026`,
+    measurements: `Various dimensions, 2026`,
 
     description:
-      `This identity system was added to various directories, 
+      `Proposal of identity system for various directories, 
       maps and other graphics. I was inspired by the colors and 
       overlay aesthetics of masking tape, one of many art supplies 
       RISD students use the most.`,
@@ -308,10 +308,10 @@ page: {
 
     measurements: "9\" x 12\", Magazine, 2025",
 
-    description: `I made a magazine based on educational Youtuber Kurzgesagt's video, 
+    description: `I made a magazine based on educational YouTube Channel Kurzgesagt's video, 
     "Can You Upload Your Mind And Live Forever?" There are fold out pages at the end 
     of each chapter, depicting the vast scale of knowledge and the universe. The magazine 
-    making process was simple. I watched Kurzgesact's video, digested the contents, 
+    making process was simple. I watched Kurzgesagt's video, digested the contents, 
     and made pages based on the visual language I wanted the magazine to have.`,
 
     page: {
@@ -977,7 +977,7 @@ My color and surface course assigned me one contemporary fashion designer and ma
 
     measurements: "24\" x 36\",  Poster, 2024",
 
-    description: `This poster promotes the typeset 'Dunbar', created by CJ Dunn.
+    description: `This poster promotes the typeface 'Dunbar', created by CJ Dunn.
 This is the website to the designer's page, introducing the font and explaining the process.`,
 
     hero: { type: "image", src: "images/dunbar/hero.jpg" },
