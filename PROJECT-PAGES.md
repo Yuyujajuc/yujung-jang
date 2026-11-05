@@ -222,3 +222,23 @@ Set `gapAfter: 24` on a block to use exactly 24px before the next block instead 
 the normal row-alignment rule. This includes any caption in the preceding block.
 Omit it to keep automatic spacing; `gapAfter: 0` removes that gap. It has no effect
 on the final block's bottom padding.
+
+
+### Presentation viewer
+
+Use `slides` in the order they should appear. Images (including animated GIFs) and MP4 videos can be mixed. All slides use `contain` within one fixed frame. Margin accepts `full-bleed`, `0-column`, `1-column`, or `2-column`.
+
+```js
+{
+  type: "presentation",
+  margin: "1-column",
+  aspectRatio: "16 / 9",
+  slides: [
+    { type: "image", src: "images/example/1.webp", alt: "Introduction" },
+    { type: "video", src: "videos/example/2.mp4", autoplay: true,
+      loop: true, muted: true, controls: true, poster: "images/example/2.jpg" }
+  ]
+}
+```
+
+Focus the viewer or its buttons to use Left/Right arrows. Swipe horizontally across slides on mobile; the bottom video control area remains available for seeking. Videos pause when hidden, offscreen, or the browser tab is hidden. Autoplay respects reduced-motion preferences and browser audio restrictions.

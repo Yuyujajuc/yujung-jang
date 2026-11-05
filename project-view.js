@@ -3,7 +3,7 @@
   // Fresh-visit view: 'grid' or 'list'. Keep index.html's initial view in sync.
   const defaultView = 'grid';
   const key = 'portfolio:return';
-  const categories = ['all', 'Motion + Web', 'Editorial', 'Identity', 'Infographics', 'other'];
+  const categories = ['all', 'Presentation', 'Editorial', 'Identity', 'Motion + Web', 'Infographics', 'other'];
   let saved;
   try {
     saved = JSON.parse(sessionStorage.getItem(key));

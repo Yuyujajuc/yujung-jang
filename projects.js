@@ -13,6 +13,837 @@
 // Display categories do not change category filtering or project detail pages.
 const projects = [
 
+   {
+    id: "afterimage",
+    views: {
+     grid: { 
+      cover: {  type: "image",
+        src: "images/afterimage/7.jpg"} },
+           },
+
+    title: "Afterimage",
+    date: "2026",
+    category: "Presentation",
+    secondaryCategory: "Film Pitch Deck",
+
+    cover: {
+        type: "image",
+        src: "images/afterimage/7.jpg",
+      },
+
+    measurements: `1920px * 1080px, 2026`,
+
+    description:
+      `Film pitch deck I created for MSCHF and Ideal Model Corporation. 
+      All original project content has been fictionalized to comply with MSCHF's 
+      confidentiality guidelines. The visual design remains representative of my original work.
+      `,
+
+page: {
+  
+
+  hero: {
+    type: "image",
+    src: "images/afterimage/hero.jpg",
+    fit: "cover"
+  },
+  
+  blocks: [
+
+    {
+          type: "presentation", margin: "1-column", aspectRatio: "16 / 9",
+          slides: [
+            { type: "image",
+              src: "images/afterimage/1.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+            { type: "video",
+              src: "videos/afterimage/2.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+            { type: "video",
+              src: "videos/afterimage/3.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/afterimage/4.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/5.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/afterimage/6.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/7.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/8.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/9.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/10.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/afterimage/11.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/12.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/13.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/14.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/15.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/16.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/17.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/18.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/19.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/afterimage/20.jpg",
+              alt: "afterimage",
+              fit: "contain" },
+            ]
+        },
+    
+  ]
+}
+
+    
+  },
+
+  {
+    id: "safet",
+    title: "Safe-T: Sequential, Advised, Familiarized Exposure Therapy",
+    date: "2026",
+    category: "Identity",
+    cover: { type: "video", src: "videos/safet/cover.mp4" },
+
+    views: { 
+      grid: { 
+        title: "Safe-T", secondaryCategory: "Campaign, Motion, Identity",
+        cover: { type: "video", src: "videos/safet/grid-cover.mp4" }
+      } 
+    },
+      cover: {
+        type: "video",
+        src: "videos/safet/cover.mp4",
+
+        autoplay: true,
+        loop: true,
+        muted: true,
+        controls: false
+      },
+    
+      title: "Safe-T: Sequential, Advised, Familiarized Exposure Therapy",
+    date: "2026",
+    category: "Identity",
+
+    measurements: "Campaign, Identity, Motion, 2026",
+
+    description: `A campaign for Project REACH, a research initiative led by Dr. Hannah Frank, 
+    an Assistant Professor of the Department of Psychiatry and Human Behavior at Brown University. 
+    REACH aims to increase access to exposure therapy for people with and parents of children who 
+    have anxiety, OCD, and other related disorders. Sate-T was a group project; the teammates were
+    Yujung Jang, Rachel Chen, and Koji Hellman. I developed the visual identity and brand guidelines 
+    for Safe-T. The identity system was then applied across campaign materials, including posters 
+    and worksheets designed by Rachel and Koji.
+`,
+
+    page: {
+      
+      hero: {
+        type: "image",
+        src: "images/safet/hero.jpg",
+        alt: "Safe-T campaign overview",
+        fit: "contain"
+},
+      blocks: [
+        {
+          caption: "Explainer poster by Koji Hellman",
+          type: "collage", margin: "1-column", columns: 10, gutter: 42,
+          rows: [[
+            { span: 6, media: { type: "image", src: "images/safet/poster.jpg", 
+              alt: "Safe-T campaign poster explaining the therapy campaign, identity and materials", 
+              width: 7200, height: 10800 } },
+            { span: 4, gutter: 28, stack: [
+              { type: "image",
+              src: "images/safet/therapist-talk.png",
+              alt: "Safe-T campaign",
+              fit: "contain" },
+              { type: "image",
+              src: "images/safet/bed-extension.png",
+              alt: "Safe-T campaign",
+              fit: "contain" }
+            ] }
+          ]]
+        },
+
+        {
+          type: "equal-grid", margin: "1-column", columns: 3, gutter: 20,
+          aspectRatio: "348 / 458",
+          caption: "Worksheets by Koji Hellman",
+          items: [
+            { type: "image",
+              src: "images/safet/explainersheet.jpg",
+              alt: "Safe-T campaign",
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/safet/ws-fear-hierarchy.jpg",
+              alt: "Safe-T campaign",
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/safet/ws-gradedexposure.jpg",
+              alt: "Safe-T campaign",
+              fit: "contain" },
+          ]
+        },
+
+        { type: "big", margin: "1-column",
+          caption: "Animation directed and created by Rachel Chen,\nillustrations by Koji Hellman", 
+          media: { type: "video",
+              preload: "auto",
+              autoplayOnView: false,
+              src: "videos/safet/explainer-video.mp4",
+              alt: "Safe-T campaign",
+              poster: "images/safet/explainer-video-poster.jpg",
+              fit: "contain" } },
+
+        {
+          type: "equal-grid",
+          margin: "0-column",
+          columns: 5,
+          mobileColumns: 2,
+          gutter: 0,
+          aspectRatio: "264 / 204",
+          caption: "Brand guideline by Yujung Jang",
+          items: [
+            1, 4, 
+            6, 7, 8, 
+            9, 10, 11, 
+            12, 13, 14, 
+            15, 16, 17, 18
+          ].map(n => ({
+            type: "image",
+            src: `images/safet/style-guide-jpg/${n}.jpg`,
+            alt: `Safe-T style guide ${n}`,
+            fit: "contain"
+          }))
+        },
+          
+
+        { type: "big", margin: "1-column",
+          caption: "Logo by Yujung Jang and Rachel Chen", 
+          media: { type: "video",
+        src: "videos/safet/logo-animation.mp4",
+
+        autoplay: true,
+        loop: true,
+        muted: true,
+        controls: false } }
+      ]
+    },
+    
+  },
+
+    {
+    id: "risd-sign-system",
+    views: {
+     grid: { 
+      cover: { type: "image", src: "images/risd-sign-system/grid-cover.jpg" } },
+           },
+
+    title: "RISD Sign System",
+    date: "2026",
+    category: "Identity",
+
+    cover: { type: "image", src: "images/risd-sign-system/cover.jpg" },
+
+    measurements: `Various dimensions, 2026`,
+
+    description:
+      `Proposal of identity system for various directories, 
+      maps and other graphics. I was inspired by the colors and 
+      overlay aesthetics of masking tape, one of many art supplies 
+      RISD students use the most.`,
+
+page: {
+  
+
+  hero: {
+    type: "image",
+    src: "images/risd-sign-system/hero.jpg",
+    fit: "cover"
+  },
+  
+  blocks: [
+
+    {
+          type: "equal-grid", margin: "full-bleed", columns: 1, gutter: 0,
+          items: [
+            { type: "image",
+              src: "images/risd-sign-system/door-map.jpg",
+              alt: "risd sign system",
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/risd-sign-system/direction.jpg",
+              alt: "risd sign system",
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/risd-sign-system/elevator.jpg",
+              alt: "risd sign system",
+              fit: "contain" },
+            ]
+        },
+    
+  ]
+}    
+  },
+
+  {
+    id: "bluetooth",
+    views: {
+     grid: { 
+      category: "Publication", 
+      secondaryCategory: "Accordion Book", 
+      cover: { type: "image", src: "images/bluetooth/grid-cover.jpg" } },
+           },
+
+    title: "Bluetooth LE Principles",
+    date: "2026",
+    category: "Infographics",
+
+    cover: { type: "image", src: "images/bluetooth/cover.jpg" },
+
+    measurements: `13" x 9", 9 pages, accordion book, 2026`,
+
+    description:
+      `Data visualization accordion book of the principles 
+      of Bluetooth LE (Low Energy). I did in-depth research on what 
+      exactly happens in both the computer and the headphones when music 
+      travels from both devices. The research itself took the longest time in the project timeline. 
+      On the left side of the pages, the book explains what literally happens with 
+      the actual protocol stack on both devices. As the reader proceeds to the right, 
+      the explanation goes more figurative, metaphorical and detailed.`,
+
+page: {
+  
+
+  hero: {
+    type: "image",
+    src: "images/bluetooth/hero.jpg",
+    fit: "contain"
+  },
+
+  blocks: [
+    {
+          type: "equal-grid", margin: "1-column", columns: 1, gutter: 0,
+          items: [
+            { type: "image",
+              src: "images/bluetooth/pages-webp/cover.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/bluetooth/pages-webp/stack.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/bluetooth/pages-webp/1.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/bluetooth/pages-webp/2.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/bluetooth/pages-webp/3.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/bluetooth/pages-webp/4.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/bluetooth/pages-webp/5.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/bluetooth/pages-webp/6.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/bluetooth/pages-webp/7.webp",
+              alt: "Bluetooth LE Principles",
+              fit: "contain" },
+            ]
+        },
+  ]
+} },
+
+  {
+    id: "palm-fever",
+    views: {
+     grid: { 
+      cover: {  type: "video",
+        src: "videos/palm-fever/grid-cover.mp4",
+
+        autoplay: true,
+        loop: true,
+        muted: true,
+        controls: false } },
+           },
+
+    title: "Palm Fever",
+    date: "2026",
+    category: "Presentation",
+    secondaryCategory: "Film Pitch Deck",
+
+    cover: {
+        type: "video",
+        src: "videos/palm-fever/cover.mp4",
+
+        autoplay: true,
+        loop: true,
+        muted: true,
+        controls: false
+      },
+
+    measurements: `1920px * 1080px, 2026`,
+
+    description:
+      `Film pitch deck I created for MSCHF and Ideal Model Corporation. 
+      All original project content has been fictionalized to comply with MSCHF's 
+      confidentiality guidelines. The visual design remains representative of my original work.
+      `,
+
+page: {
+  
+
+  hero: {
+    type: "video",
+    src: "videos/palm-fever/hero.mp4",
+    controls: false,
+    autoplay: true,
+    loop: true,
+    muted: true,
+    playsinline: true,
+    fit: "contain"
+  },
+  
+  blocks: [
+
+    {
+          type: "presentation", margin: "1-column", aspectRatio: "16 / 9",
+          slides: [
+            { type: "image",
+              src: "images/palm-fever/1.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+            { type: "video",
+              src: "videos/palm-fever/2.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/palm-fever/3.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+            { type: "image",
+              src: "images/palm-fever/4.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/5.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/6.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/7.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/8.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/9.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/10.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/11.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/12.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/13.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/14.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/15.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/16.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/17.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/18.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/19.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/20.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/21.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/22.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/23.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/24.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/25.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/26.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/27.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/28.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/29.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/30.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/31.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/32.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/33.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/34.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/35.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/36.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "image",
+              src: "images/palm-fever/37.jpg",
+              alt: "palm-fever",
+              fit: "contain" },
+
+              { type: "video",
+              src: "videos/palm-fever/38.mp4",
+              controls: false,
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              fit: "contain" },
+            ]
+        },
+    
+  ]
+}
+
+    
+  },
+
+{
+    id: "are-we-there-yet",
+    views: {
+      grid: {
+        title: "Are We There Yet?",
+        secondaryCategory: "Poster",
+        cover: { type: "image", src: "images/are-we-there-yet/grid-cover.jpg" }
+      }
+    },
+
+    title: "Are We There Yet? My Bag is Heavy...",
+    date: "2025",
+    category: "Infographics",
+
+    cover: { type: "image", src: "images/are-we-there-yet/cover.jpg" },
+
+    measurements: "24\" x 36\", Poster, 2026",
+
+    description: `Data visualization poster of three trips, 
+    each from 15 Westminster St Providence to three different locations. 
+    I drew the assets with colored pencil, edited them on Photoshop, and 
+    imported them into Indesign to add captions, arrows, and other graphics.`,
+
+    page: {
+  
+
+  hero: {
+    type: "image",
+    src: "images/are-we-there-yet/hero.png",
+    fit: "contain"
+  },
+
+  blocks: [
+    {
+      type: "big",
+      margin: "1-column",
+      media: {
+        type: "image",
+        src: "images/are-we-there-yet/poster.jpg",
+        alt: "Are we there yet poster",
+        fit: "contain"
+      }
+    },
+    {
+      type: "big",
+      margin: "1-column",
+      media: {
+        type: "image",
+        src: "images/are-we-there-yet/bags.png",
+        alt: "Are we there yet bags",
+        fit: "contain",
+        caption: "Bags drawings",
+      }
+    },
+        {
+          type: "equal-grid",
+          margin: "1-column",
+          columns: 5,
+          mobileColumns: 2,
+          gutter: 0,
+          caption: "Object drawings",
+
+          items: [
+            1, 2, 3, 4, 5
+          ].map(n => ({
+            type: "image",
+            src: `images/are-we-there-yet/${n}.jpg`,
+            alt: `Are we there yet ${n}`,
+          }))
+        }
+  ]
+} 
+  
+  },
 
   {
     id: "comfortably-numb",
@@ -37,7 +868,7 @@ const projects = [
 
     measurements: "1'55'', motion graphic animation, 2025",
 
-    description: `This is a lyric video of Pink Floyd's song \"Comfortably Numb\". 
+    description: `Lyric video of Pink Floyd's song \"Comfortably Numb\". 
     Some words in the lyrics are replaced by important symbols in the animation. 
     For example, the word \"you\" is replaced by a dark butterfly and \"I\" 
     is replaced by a T-pin. \"I\" and the pin has a graphic relation, and \"I\"
@@ -143,153 +974,10 @@ const projects = [
   ]
 }},
 
-  {
-    id: "risd-sign-system",
-    views: {
-     grid: { 
-      cover: { type: "image", src: "images/risd-sign-system/grid-cover.jpg" } },
-           },
-
-    title: "RISD Sign System",
-    date: "2026",
-    category: "Identity",
-
-    cover: { type: "image", src: "images/risd-sign-system/cover.jpg" },
-
-    measurements: `Various dimensions, 2026`,
-
-    description:
-      `Proposal of identity system for various directories, 
-      maps and other graphics. I was inspired by the colors and 
-      overlay aesthetics of masking tape, one of many art supplies 
-      RISD students use the most.`,
-
-page: {
+  
   
 
-  hero: {
-    type: "image",
-    src: "images/risd-sign-system/hero.jpg",
-    fit: "cover"
-  },
   
-  blocks: [
-
-    {
-          type: "equal-grid", margin: "full-bleed", columns: 1, gutter: 0,
-          items: [
-            { type: "image",
-              src: "images/risd-sign-system/door-map.jpg",
-              alt: "risd sign system",
-              fit: "contain" },
-
-            { type: "image",
-              src: "images/risd-sign-system/direction.jpg",
-              alt: "risd sign system",
-              fit: "contain" },
-
-            { type: "image",
-              src: "images/risd-sign-system/elevator.jpg",
-              alt: "risd sign system",
-              fit: "contain" },
-            ]
-        },
-    
-  ]
-}
-
-    
-  },
-  
-
-  {
-    id: "bluetooth",
-    views: {
-     grid: { 
-      category: "Publication", 
-      secondaryCategory: "Accordion Book", 
-      cover: { type: "image", src: "images/bluetooth/grid-cover.jpg" } },
-           },
-
-    title: "Bluetooth LE Principles",
-    date: "2026",
-    category: "Infographics",
-
-    cover: { type: "image", src: "images/bluetooth/cover.jpg" },
-
-    measurements: `13" x 9", 9 pages, accordion book, 2026`,
-
-    description:
-      `This accordion book is a data visualization of the principles 
-      of Bluetooth LE (Low Energy). I did in-depth research on what 
-      exactly happens in both the computer and the headphones when music 
-      travels from both devices. The research itself, where I taught myself 
-      how Bluetooth operates, took the longest time in the project timeline. 
-      On the left side of the pages, the book explains what literally happens with 
-      the actual protocol stack on both devices. As the reader proceeds to the right, 
-      the explanation goes more figurative, metaphorical and detailed.`,
-
-page: {
-  
-
-  hero: {
-    type: "image",
-    src: "images/bluetooth/hero.jpg",
-    fit: "contain"
-  },
-
-  blocks: [
-    {
-          type: "equal-grid", margin: "1-column", columns: 1, gutter: 0,
-          items: [
-            { type: "image",
-              src: "images/bluetooth/pages-webp/cover.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-
-            { type: "image",
-              src: "images/bluetooth/pages-webp/stack.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-
-            { type: "image",
-              src: "images/bluetooth/pages-webp/1.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-
-              { type: "image",
-              src: "images/bluetooth/pages-webp/2.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-
-              { type: "image",
-              src: "images/bluetooth/pages-webp/3.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-
-              { type: "image",
-              src: "images/bluetooth/pages-webp/4.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-
-              { type: "image",
-              src: "images/bluetooth/pages-webp/5.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-
-              { type: "image",
-              src: "images/bluetooth/pages-webp/6.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-
-              { type: "image",
-              src: "images/bluetooth/pages-webp/7.webp",
-              alt: "Bluetooth LE Principles",
-              fit: "contain" },
-            ]
-        },
-  ]
-} },
 
    {
     id: "mind-uploading-magazine",
@@ -308,7 +996,7 @@ page: {
 
     measurements: "9\" x 12\", Magazine, 2025",
 
-    description: `I made a magazine based on educational YouTube Channel Kurzgesagt's video, 
+    description: `A magazine based on educational YouTube Channel Kurzgesagt's video, 
     "Can You Upload Your Mind And Live Forever?" There are fold out pages at the end 
     of each chapter, depicting the vast scale of knowledge and the universe. The magazine 
     making process was simple. I watched Kurzgesagt's video, digested the contents, 
@@ -382,144 +1070,7 @@ page: {
     },
   },
 
-  {
-    id: "safet",
-    title: "Safe-T: Sequential, Advised, Familiarized Exposure Therapy",
-    date: "2026",
-    category: "Identity",
-    cover: { type: "video", src: "videos/safet/cover.mp4" },
-
-    views: { 
-      grid: { 
-        title: "Safe-T", secondaryCategory: "Campaign, Motion, Identity",
-        cover: { type: "video", src: "videos/safet/grid-cover.mp4" }
-      } 
-    },
-      cover: {
-        type: "video",
-        src: "videos/safet/cover.mp4",
-
-        autoplay: true,
-        loop: true,
-        muted: true,
-        controls: false
-      },
-    
-      title: "Safe-T: Sequential, Advised, Familiarized Exposure Therapy",
-    date: "2026",
-    category: "Identity",
-
-    measurements: "Campaign, Identity, Motion, 2026",
-
-    description: `A campaign for Project REACH, a research initiative led by Dr. Hannah Frank, 
-    an Assistant Professor of the Department of Psychiatry and Human Behavior at Brown University. 
-    REACH aims to increase access to exposure therapy for people with and parents of children who 
-    have anxiety, OCD, and other related disorders. Sate-T was a group project; the teammates were
-    Yujung Jang, Rachel Chen, and Koji Hellman. I developed the visual identity and brand guidelines 
-    for Safe-T. The identity system was then applied across campaign materials, including posters 
-    and worksheets designed by Rachel and Koji.
-`,
-
-    page: {
-      
-      hero: {
-        type: "image",
-        src: "images/safet/hero.jpg",
-        alt: "Safe-T campaign overview",
-        fit: "contain"
-},
-      blocks: [
-        {
-          caption: "Explainer poster by Koji Hellman",
-          type: "collage", margin: "1-column", columns: 10, gutter: 42,
-          rows: [[
-            { span: 6, media: { type: "image", src: "images/safet/poster.jpg", 
-              alt: "Safe-T campaign poster explaining the therapy campaign, identity and materials", 
-              width: 7200, height: 10800 } },
-            { span: 4, gutter: 28, stack: [
-              { type: "image",
-              src: "images/safet/therapist-talk.png",
-              alt: "Safe-T campaign",
-              fit: "contain" },
-              { type: "image",
-              src: "images/safet/bed-extension.png",
-              alt: "Safe-T campaign",
-              fit: "contain" }
-            ] }
-          ]]
-        },
-
-        {
-          type: "equal-grid", margin: "1-column", columns: 3, gutter: 20,
-          aspectRatio: "348 / 458",
-          caption: "Worksheets by Koji Hellman",
-          items: [
-            { type: "image",
-              src: "images/safet/explainersheet.jpg",
-              alt: "Safe-T campaign",
-              fit: "contain" },
-
-            { type: "image",
-              src: "images/safet/ws-fear-hierarchy.jpg",
-              alt: "Safe-T campaign",
-              fit: "contain" },
-
-            { type: "image",
-              src: "images/safet/ws-gradedexposure.jpg",
-              alt: "Safe-T campaign",
-              fit: "contain" },
-          ]
-        },
-
-        { type: "big", margin: "1-column",
-          caption: "Animation directed and created by Rachel Chen,\nillustrations by Koji Hellman", 
-          media: { type: "video",
-              preload: "auto",
-              autoplayOnView: true,
-              src: "videos/safet/explainer-video.mp4",
-              alt: "Safe-T campaign",
-              poster: "images/safet/explainer-video-poster.jpg",
-              fit: "contain" } },
-
-        {
-          type: "equal-grid",
-          margin: "0-column",
-          columns: 5,
-          mobileColumns: 2,
-          gutter: 0,
-          aspectRatio: "264 / 204",
-          caption: "Brand guideline by Yujung Jang",
-          items: [
-            1, 4, 
-            6, 7, 8, 
-            9, 10, 11, 
-            12, 13, 14, 
-            15, 16, 17, 18
-          ].map(n => ({
-            type: "image",
-            src: `images/safet/style-guide-jpg/${n}.jpg`,
-            alt: `Safe-T style guide ${n}`,
-            fit: "contain"
-          }))
-        },
-          
-
-        { type: "big", margin: "1-column",
-          caption: "Logo by Yujung Jang and Rachel Chen", 
-          media: { type: "video",
-        src: "videos/safet/logo-animation.mp4",
-
-        autoplay: true,
-        loop: true,
-        muted: true,
-        controls: false } }
-      ]
-    },
-    
-
-
-    
-  },
+  
 
   {
     id: "thisplace-alot",
@@ -547,8 +1098,8 @@ page: {
 
     measurements: "1'55'', motion graphic animation, 2025",
 
-    description: `This Place Is A Lot looks at the irony of non-vehicular interactions that 
-    occur in a space designed for vehicles. We want to view the Metropark parking 
+    description: `A web interaction mockup looks at the irony of non-vehicular interactions that 
+    occur in a space designed for vehicles. My team perceived the Metropark parking 
     lot as a site for more than what it is intended for. We observed traffic in ways 
     unrelated to cars: animals, pedestrians, flora, and light patterns. It was 
     interesting to view an unextraordinary space like a parking lot as one filled 
@@ -738,82 +1289,6 @@ page: {
     
       ]
     }
-  },
-
-
-  {
-    id: "are-we-there-yet",
-    views: {
-      grid: {
-        title: "Are We There Yet?",
-        secondaryCategory: "Poster",
-        cover: { type: "image", src: "images/are-we-there-yet/grid-cover.jpg" }
-      }
-    },
-
-    title: "Are We There Yet? My Bag is Heavy...",
-    date: "2025",
-    category: "Infographics",
-
-    cover: { type: "image", src: "images/are-we-there-yet/cover.jpg" },
-
-    measurements: "24\" x 36\", Poster, 2026",
-
-    description: `This poster is a data visualization of three trips, 
-    each from 15 Westminster St Providence to three different locations. 
-    I drew the assets with colored pencil, edited them on Photoshop, and 
-    imported them into Indesign to add captions, arrows, and other graphics.`,
-
-    page: {
-  
-
-  hero: {
-    type: "image",
-    src: "images/are-we-there-yet/hero.png",
-    fit: "contain"
-  },
-
-  blocks: [
-    {
-      type: "big",
-      margin: "1-column",
-      media: {
-        type: "image",
-        src: "images/are-we-there-yet/poster.jpg",
-        alt: "Are we there yet poster",
-        fit: "contain"
-      }
-    },
-    {
-      type: "big",
-      margin: "1-column",
-      media: {
-        type: "image",
-        src: "images/are-we-there-yet/bags.png",
-        alt: "Are we there yet bags",
-        fit: "contain",
-        caption: "Bags drawings",
-      }
-    },
-        {
-          type: "equal-grid",
-          margin: "1-column",
-          columns: 5,
-          mobileColumns: 2,
-          gutter: 0,
-          caption: "Object drawings",
-
-          items: [
-            1, 2, 3, 4, 5
-          ].map(n => ({
-            type: "image",
-            src: `images/are-we-there-yet/${n}.jpg`,
-            alt: `Are we there yet ${n}`,
-          }))
-        }
-  ]
-} 
-  
   },
 
   {
@@ -1212,7 +1687,7 @@ function renderSelection() {
   const category = home.state.category;
   const filtered = category === 'all' ? projects : projects.filter(project =>
     category === 'other'
-      ? !['Motion + Web', 'Editorial', 'Identity', 'Infographics'].includes(project.category)
+      ? !['Presentation', 'Motion + Web', 'Editorial', 'Identity', 'Infographics'].includes(project.category)
       : project.category === category
   );
   renderProjects(filtered);

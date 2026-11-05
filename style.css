@@ -1163,7 +1163,7 @@ button {
 }
 /* Homepage — Figma Main (164:60), 1440 × 981.
    Scoped to preserve the existing About and project page styles. */
-html:has(.home-page) { scrollbar-gutter: auto; }
+html:has(.home-page) { scrollbar-gutter: stable; }
 .home-page { font-weight: 300; }
 .home-page .site { width: 100%; max-width: none; margin: 0; padding: 36px 36px 36px 411px; }
 .home-page .header { position: fixed; top: 30px; left: 69px; display: block; width: 342px; }
